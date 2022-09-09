@@ -43,6 +43,13 @@ body {
   background-repeat: no-repeat;
 }
 
+
+.top-right-img {
+  position: absolute;
+}
+
+
+
 .sweet {
   position: relative;
   height: 45em;
@@ -60,6 +67,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.top-left-img {
+  position: absolute;
+}
+
 
 .sweeter {
   position: relative;
@@ -146,13 +158,7 @@ body {
   padding: 0.5em 3em;
 }
 
-.top-right-img {
-  position: absolute;
-}
 
-.top-left-img {
-  position: absolute;
-}
 
 .touch-txt .h-3 {
   font-family: 'Wendy One';
