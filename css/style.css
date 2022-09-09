@@ -1,0 +1,194 @@
+:root {
+  --primary-color: #642c99;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0%;
+  margin: 0%;
+}
+
+/* .miss {
+  padding: 10px;
+  text-align: left;
+} */
+
+/* section {
+    width: 100%;
+    height: 40em;
+} */
+
+.cupcake {
+  position: relative;
+  background-color: #f6bdcfba;
+  height: 40em;
+}
+
+.cupcake:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: url('../images/1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sweet {
+  position: relative;
+  height: 45em;
+  background-color: #f7f7bbc4;
+}
+
+.sweet:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: url('../images/2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sweeter {
+  position: relative;
+  height: 115em;
+  background-color: #d7ffc66b;
+}
+
+.sweeter:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: url('../images/3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.time {
+  position: relative;
+  height: 55em;
+  background-color: #ffe7ba9e;
+  /* background-image: linear-gradient(315deg,
+            #b73ba7 0%, #49b73b 74%); */
+}
+
+.time:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: url('../images/4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  position: relative;
+  background-color: #642c99;
+  /* background-image: linear-gradient(315deg,
+    #6137a9 0%, #6137a9 74%); */
+}
+
+@font-face {
+  font-family: "Wendy One";
+  src: url("../fonts/WendyOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato Bold";
+  src: url("../fonts/Lato-Bold.ttf");
+}
+
+.touch-txt {
+  padding-left: 50px;
+}
+
+.touch-txt .h-2 {
+  font-family: 'Wendy One';
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 95px;
+  color: #642c99;
+}
+
+.touch-txt .p-1 {
+  font-size: 18px;
+  line-height: 26px;
+  color: #642c99;
+}
+
+.touch-txt .btn {
+  background: var(--primary-color);
+  border-radius: 8px;
+  color: #fff;
+  padding: 0.5em 3em;
+}
+
+.top-right-img {
+  position: absolute;
+}
+
+.top-left-img {
+  position: absolute;
+}
+
+.touch-txt .h-3 {
+  font-family: 'Wendy One';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 34px;
+  text-align: center;
+  color: #642C99;
+
+}
+
+.touch-txt .p-2 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #642C99;
+
+}
+
+
+.cl {
+  color: #fdefd1;
+}
+
+.cl .h-2 {
+  font-family: "Wendy One";
+  font-weight: 400;
+  font-size: 32px;
+  /* line-height: 34px; */
+}
+
+.text {
+  font-family: "Lato Bold";
+  font-size: 18px;
+  /* line-height: 48px; */
+}
