@@ -126,7 +126,7 @@
                                 <form>
                                     <div class="value-button" id="decrease" onclick="decreaseValue()"
                                         value="Decrease Value">-</div>
-                                    <input type="number" id="number" value="0" />
+                                    <input type="number"  class="operation" id="number" value="0" />
                                     <div class="value-button" id="increase" onclick="increaseValue()"
                                         value="Increase Value">+</div>
                                 </form>
@@ -155,7 +155,7 @@
                                 <form>
                                     <div class="value-button" id="decrease" onclick="decreaseValue()"
                                         value="Decrease Value">-</div>
-                                    <input type="number" id="number" value="0" />
+                                    <input type="number"  class="operation" id="number" value="0" />
                                     <div class="value-button" id="increase" onclick="increaseValue()"
                                         value="Increase Value">+</div>
                                 </form>
@@ -182,7 +182,7 @@
                                 <form>
                                     <div class="value-button" id="decrease" onclick="decreaseValue()"
                                         value="Decrease Value">-</div>
-                                    <input type="number" id="number" value="0" />
+                                    <input type="number"  class="operation" id="number" value="0" />
                                     <div class="value-button" id="increase" onclick="increaseValue()"
                                         value="Increase Value">+</div>
                                 </form>
@@ -209,7 +209,7 @@
                                 <form>
                                     <div class="value-button" id="decrease" onclick="decreaseValue()"
                                         value="Decrease Value">-</div>
-                                    <input type="number" id="number" value="0" />
+                                    <input type="number"  class="operation" id="number" value="0" />
                                     <div class="value-button" id="increase" onclick="increaseValue()"
                                         value="Increase Value">+</div>
                                 </form>
@@ -235,7 +235,7 @@
                                 <form>
                                     <div class="value-button" id="decrease" onclick="decreaseValue()"
                                         value="Decrease Value">-</div>
-                                    <input type="number" id="number" value="0" />
+                                    <input type="number"  class="operation" id="number" value="0" />
                                     <div class="value-button" id="increase" onclick="increaseValue()"
                                         value="Increase Value">+</div>
                                 </form>
@@ -261,7 +261,7 @@
                                 <form>
                                     <div class="value-button" id="decrease" onclick="decreaseValue()"
                                         value="Decrease Value">-</div>
-                                    <input type="number" id="number" value="0" />
+                                    <input type="number"  class="operation" id="number" value="0" />
                                     <div class="value-button" id="increase" onclick="increaseValue()"
                                         value="Increase Value">+</div>
                                 </form>
@@ -288,9 +288,9 @@
                                 <form>
                                     <div class="value-button" id="decrease" onclick="decreaseValue()"
                                         value="Decrease Value">-</div>
-                                    <input type="number" id="number" value="0" />
-                                    <div class="value-button" id="increase" onclick="increaseValue()"
-                                        value="Increase Value">+</div>
+                                    <input type="number"  class="operation" id="nuts" value="0" />
+                                    <div class="value-button" id="nuts" onclick="nutincrease()" value="Increase Value">+
+                                    </div>
                                 </form>
                             </div>
                             <div class="col-sm-6">
@@ -314,7 +314,7 @@
                                 <form>
                                     <div class="value-button" id="decrease" onclick="decreaseValue()"
                                         value="Decrease Value">-</div>
-                                    <input type="number" id="number" value="0" />
+                                    <input type="number"  class="operation" id="number" value="0" />
                                     <div class="value-button" id="increase" onclick="increaseValue()"
                                         value="Increase Value">+</div>
                                 </form>
@@ -365,31 +365,31 @@
 
 
 
-        <!-- Footer -->
-        <footer class="footer text-lg-start">
+    <!-- Footer -->
+    <footer class="footer text-lg-start">
 
-            <section class="cl">
-                <div class="container text-md-start p-5">
-                    <div class="row mt-3">
+        <section class="cl">
+            <div class="container text-md-start p-5">
+                <div class="row mt-3">
 
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
-                            <h2>Miss<br>cupcake</h2>
-                        </div>
+                        <h2>Miss<br>cupcake</h2>
+                    </div>
 
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <p>
-                                <a>Shop</a>
-                            </p>
-                            <p>
-                                <a>Our story</a>
-                            </p>
-                            <p>
-                                <a>Why Miss cupcake</a>
-                            </p>
-                        </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <p>
+                            <a>Shop</a>
+                        </p>
+                        <p>
+                            <a>Our story</a>
+                        </p>
+                        <p>
+                            <a>Why Miss cupcake</a>
+                        </p>
+                    </div>
 
-                        <div class="col-md-7 col-lg-5 col-xl-5 mx-auto mb-4">
+                    <div class="col-md-7 col-lg-5 col-xl-5 mx-auto mb-4">
 
 
                         <!-- <div class="text p-3">
@@ -415,30 +415,35 @@
                                 <a href="#">Terms of use</a>
                             </li>
                         </ul>
-        
+
                     </section>
                 </div>
 
 
 
-            </section>
+        </section>
 
-            <script>
-                function increaseValue() {
-                    var value = parseInt(document.getElementById('number').value, 10);
-                    value = isNaN(value) ? 0 : value;
-                    value++;
-                    document.getElementById('number').value = value;
-                }
-
-                function decreaseValue() {
-                    var value = parseInt(document.getElementById('number').value, 10);
-                    value = isNaN(value) ? 0 : value;
-                    value < 1 ? value = 1 : '';
-                    value--;
-                    document.getElementById('number').value = value;
-                }
-            </script>
+        <script>
+            function increaseValue() {
+                var value = parseInt(document.getElementById('number').value, 10);
+                value = isNaN(value) ? 0 : value;
+                value++;
+                document.getElementById('number').value = value;
+            }
+            function nutincrease() {
+                var nutsvalue = parseInt(document.getElementById('nuts').value, 10);
+                nutsvalue = isNaN(nutsvalue) ? 0 : nutsvalue;
+                nutsvalue++;
+                document.getElementById('nuts').value = nutsvalue;
+            }
+            function decreaseValue() {
+                var value = parseInt(document.getElementById('number').value, 10);
+                value = isNaN(value) ? 0 : value;
+                value < 1 ? value = 1 : '';
+                value--;
+                document.getElementById('number').value = value;
+            }
+        </script>
 
 </body>
 
