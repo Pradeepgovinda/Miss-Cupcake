@@ -9,9 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap-grid.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -61,8 +61,12 @@
                 </div>
                 <div class="col-lg-6 order-lg-2 order-1">
                     <div class="top-right-img">
-                        <img src="./images/1.1.png" width="300">
+                        <img src="./images/1.1.png" alt="Cupcake" width="300">
+
                     </div>
+                    <!-- <div class="top d-xxl-none">
+                        <img src="./images/cupcake.png" class="img-fluid">
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -78,7 +82,7 @@
                 <div class="col-lg-6 order-lg-1 order-2">
 
                     <div class="top-left-img">
-                        <img src="./images/Group.png" class="img-fluid">
+                        <img src="./images/Group.png" alt="Sweet Life" class="img-fluid">
                     </div>
 
                 </div>
@@ -114,7 +118,7 @@
                 <div class="col-sm-6 col-md-4  item text-center">
 
                     <div>
-                        <img src="./images/image 1.png" class="img-fluid">
+                        <img src="./images/image 1.png" alt="Strawberry" class="img-fluid">
                         <h3 class="h-4"> Pink strawberry </h3>
                         <p class="p-2">A fluffy strawberry cupcake with strawberry <br> buttercream frosting and
                             chocolate syrup. </p>
@@ -122,17 +126,17 @@
                     <div class="mt-5 mb-5">
 
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <form>
-                                    <div class="value-button" id="decrease" onclick="decreaseValue()"
+                                    <div class="value-button" id="decrease" onclick="strawberrydecrease()"
                                         value="Decrease Value">-</div>
-                                    <input type="number"  class="operation" id="number" value="0" />
-                                    <div class="value-button" id="increase" onclick="increaseValue()"
+                                    <input type="number" class="operation" id="strawberry" value="0" />
+                                    <div class="value-button" id="increase" onclick="strawberryincrease()"
                                         value="Increase Value">+</div>
                                 </form>
 
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
 
                                 <button type="button" class="btn">SHOP NOW</button>
                             </div>
@@ -144,24 +148,24 @@
                 <div class="col-sm-6 col-md-4  item text-center">
 
                     <div>
-                        <img src="./images/image 2.png" class="img-fluid">
+                        <img src="./images/image 2.png" alt="Marshmallow" class="img-fluid">
                         <h3 class="h-4"> Marshmallow </h3>
                         <p class="p-2">A super chocolatey cupcake base with a soft <br> marshmallowy buttercream
                             topping. </p>
                     </div>
                     <div class="mt-5 mb-5">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <form>
-                                    <div class="value-button" id="decrease" onclick="decreaseValue()"
+                                    <div class="value-button" id="decrease" onclick="marshmallowdecrease()"
                                         value="Decrease Value">-</div>
-                                    <input type="number"  class="operation" id="number" value="0" />
-                                    <div class="value-button" id="increase" onclick="increaseValue()"
+                                    <input type="number" class="operation" id="marshmallow" value="0" />
+                                    <div class="value-button" id="increase" onclick="marshmallowincrease()"
                                         value="Increase Value">+</div>
                                 </form>
 
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
 
                                 <button type="button" class="btn">SHOP NOW</button>
                             </div>
@@ -172,22 +176,22 @@
                 <div class="col-sm-6 col-md-4  item text-center">
 
                     <div>
-                        <img src="./images/image 3.png" class="img-fluid">
+                        <img src="./images/image 3.png" alt="Chocolate" class="img-fluid">
                         <h3 class="h-4">Dark Chocolate</h3>
                         <p class="p-2">Belgian chocolate cake with sweet <br> chocolate frosting and cheery. </p>
                     </div>
                     <div class="mt-5 mb-5">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <form>
-                                    <div class="value-button" id="decrease" onclick="decreaseValue()"
+                                    <div class="value-button" id="decrease" onclick="chocolatedecrease()"
                                         value="Decrease Value">-</div>
-                                    <input type="number"  class="operation" id="number" value="0" />
-                                    <div class="value-button" id="increase" onclick="increaseValue()"
+                                    <input type="number" class="operation" id="chocolate" value="0" />
+                                    <div class="value-button" id="increase" onclick="chocolateincrease()"
                                         value="Increase Value">+</div>
                                 </form>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <button type="button" class="btn">SHOP NOW</button>
                             </div>
                         </div>
@@ -198,23 +202,23 @@
                 <div class="col-sm-6 col-md-4  item text-center">
 
                     <div>
-                        <img src="./images/image 4.png" class="img-fluid">
+                        <img src="./images/image 4.png" alt="Caramel" class="img-fluid">
                         <h3 class="h-4"> Salty Caramel </h3>
                         <p class="p-2">Caramel cake with a buttery caramel cream <br> cheese frosting topped with fleur
                             de sel. </p>
                     </div>
                     <div class="mt-5 mb-5">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <form>
-                                    <div class="value-button" id="decrease" onclick="decreaseValue()"
+                                    <div class="value-button" id="decrease" onclick="carameldecrease()"
                                         value="Decrease Value">-</div>
-                                    <input type="number"  class="operation" id="number" value="0" />
-                                    <div class="value-button" id="increase" onclick="increaseValue()"
+                                    <input type="number" class="operation" id="caramel" value="0" />
+                                    <div class="value-button" id="increase" onclick="caramelincrease()"
                                         value="Increase Value">+</div>
                                 </form>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <button type="button" class="btn">SHOP NOW</button>
                             </div>
                         </div>
@@ -224,23 +228,23 @@
                 <div class="col-sm-6 col-md-4  item text-center">
 
                     <div>
-                        <img src="./images/image 5.png" class="img-fluid">
+                        <img src="./images/image 5.png" alt="Velvet" class="img-fluid">
                         <h3 class="h-4"> Gluten Free Velvet </h3>
                         <p class="p-2">A gluten free twist on our classic red velvet, <br> topped off with cream cheese.
                         </p>
                     </div>
                     <div class="mt-5 mb-5">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <form>
-                                    <div class="value-button" id="decrease" onclick="decreaseValue()"
+                                    <div class="value-button" id="decrease" onclick="velvetdecrease()"
                                         value="Decrease Value">-</div>
-                                    <input type="number"  class="operation" id="number" value="0" />
-                                    <div class="value-button" id="increase" onclick="increaseValue()"
+                                    <input type="number" class="operation" id="velvet" value="0" />
+                                    <div class="value-button" id="increase" onclick="velvetincrease()"
                                         value="Increase Value">+</div>
                                 </form>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <button type="button" class="btn">SHOP NOW</button>
                             </div>
                         </div>
@@ -250,23 +254,23 @@
                 <div class="col-sm-6 col-md-4  item text-center">
 
                     <div>
-                        <img src="./images/image 6.png" class="img-fluid">
+                        <img src="./images/image 6.png" alt="Cinnamon" class="img-fluid">
                         <h3 class="h-4"> Cinnamon </h3>
                         <p class="p-2">Lightly spiced buttermilk cake with cinnamon <br> cream cheese frosting with
                             cinnamon sugar. </p>
                     </div>
                     <div class="mt-5 mb-5">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <form>
-                                    <div class="value-button" id="decrease" onclick="decreaseValue()"
+                                    <div class="value-button" id="decrease" onclick="cinnamondecrease()"
                                         value="Decrease Value">-</div>
-                                    <input type="number"  class="operation" id="number" value="0" />
-                                    <div class="value-button" id="increase" onclick="increaseValue()"
+                                    <input type="number" class="operation" id="cinnamon" value="0" />
+                                    <div class="value-button" id="increase" onclick="cinnamonincrease()"
                                         value="Increase Value">+</div>
                                 </form>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <button type="button" class="btn">SHOP NOW</button>
                             </div>
                         </div>
@@ -277,23 +281,24 @@
                 <div class="col-sm-6 col-md-4  item text-center">
 
                     <div>
-                        <img src="./images/image 7.png" class="img-fluid">
+                        <img src="./images/image 7.png" alt="nuts" class="img-fluid">
                         <h3 class="h-4"> Totally nuts </h3>
                         <p class="p-2">A sweet hazelnut paste with nutella butter <br> cream and chopped hazelnuts on
                             the top. </p>
                     </div>
                     <div class="mt-5 mb-5">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <form>
-                                    <div class="value-button" id="decrease" onclick="decreaseValue()"
+                                    <div class="value-button" id="decrease" onclick="nutdecrease()"
                                         value="Decrease Value">-</div>
-                                    <input type="number"  class="operation" id="nuts" value="0" />
-                                    <div class="value-button" id="nuts" onclick="nutincrease()" value="Increase Value">+
+                                    <input type="number" class="operation" id="nuts" value="0" />
+                                    <div class="value-button" id="increase" onclick="nutincrease()"
+                                        value="Increase Value">+
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <button type="button" class="btn">SHOP NOW</button>
                             </div>
                         </div>
@@ -303,23 +308,23 @@
                 <div class="col-sm-6 col-md-4  item text-center">
 
                     <div>
-                        <img src="./images/image 8.png" class="img-fluid">
+                        <img src="./images/image 8.png" alt="Vanilla" class="img-fluid">
                         <h3 class="h-4"> Pink Vanilla </h3>
                         <p class="p-2">Soft, fluffy, and extra moist creamy vanilla <br> buttercream with extra
                             sprinkles </p>
                     </div>
                     <div class="mt-5 mb-5">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <form>
-                                    <div class="value-button" id="decrease" onclick="decreaseValue()"
+                                    <div class="value-button" id="decrease" onclick="vanilladecrease()"
                                         value="Decrease Value">-</div>
-                                    <input type="number"  class="operation" id="number" value="0" />
-                                    <div class="value-button" id="increase" onclick="increaseValue()"
+                                    <input type="number" class="operation" id="vanilla" value="0" />
+                                    <div class="value-button" id="increase" onclick="vanillaincrease()"
                                         value="Increase Value">+</div>
                                 </form>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 col-6">
                                 <button type="button" class="btn">SHOP NOW</button>
                             </div>
                         </div>
@@ -353,7 +358,7 @@
                 </div>
                 <div class="col-lg-6 order-lg-2 order-1">
                     <div class="top-right-imge">
-                        <img src="./images/image 11.png" class="img-fluid">
+                        <img src="./images/image 11.png" alt="Once upon" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -368,16 +373,16 @@
     <!-- Footer -->
     <footer class="footer text-lg-start">
 
-        <section class="cl">
+        <section class="cl d-none d-sm-block">
             <div class="container text-md-start p-5">
                 <div class="row mt-3">
 
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
-                        <h2>Miss<br>cupcake</h2>
+                        <h2 class="h-2">Miss<br>cupcake</h2>
                     </div>
 
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <div class="para col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                         <p>
                             <a>Shop</a>
                         </p>
@@ -389,21 +394,31 @@
                         </p>
                     </div>
 
-                    <div class="col-md-7 col-lg-5 col-xl-5 mx-auto mb-4">
+                    <div class="para col-md-7 col-lg-5 col-xl-5 mx-auto ">
+
+                        <div class="row">
+                            <p> Suger up your Inbox</p>
+                            <div class="col-sm-8 col-6">
+                                <input type="email" id="form2Example1" class="form-control" placeholder="Email address">
+                            </div>
+                            <div class="col-sm-4 col-6">
+                                <button type="submit" class="btn btn-outline-light">SEND</button>
+                            </div>
+                        </div>
 
 
-                        <!-- <div class="text p-3">
-                            © MISS CUPCAKES 2020
-                        </div> -->
                     </div>
-                </div>
 
+
+
+
+                </div>
 
                 <div class="container">
                     <section class="foot">
                         <ul class="list">
                             <li class="a">
-                                <a href="#">© MISS CUPCAKES 2020</a>
+                                <a href="#">&copy; MISS CUPCAKES 2020</a>
                             </li>
                             <li class="a">
                                 <a href="#">Privacy policy</a>
@@ -418,32 +433,247 @@
 
                     </section>
                 </div>
+            </div>
 
 
 
         </section>
 
-        <script>
-            function increaseValue() {
-                var value = parseInt(document.getElementById('number').value, 10);
-                value = isNaN(value) ? 0 : value;
-                value++;
-                document.getElementById('number').value = value;
-            }
-            function nutincrease() {
-                var nutsvalue = parseInt(document.getElementById('nuts').value, 10);
-                nutsvalue = isNaN(nutsvalue) ? 0 : nutsvalue;
-                nutsvalue++;
-                document.getElementById('nuts').value = nutsvalue;
-            }
-            function decreaseValue() {
-                var value = parseInt(document.getElementById('number').value, 10);
-                value = isNaN(value) ? 0 : value;
-                value < 1 ? value = 1 : '';
-                value--;
-                document.getElementById('number').value = value;
-            }
-        </script>
+    </footer>
+
+    <footer class="footer-2 text-lg-start d-xxl-none">
+        <div class="container p-4">
+            <div class="row">
+                <div class="h-2 col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h2>Miss<br>cupcake</h2>
+
+                </div>
+
+                <div class="col-lg-8 col-md-12 mb-4 mb-md-0">
+                    <footer class="text">
+                        <div class="sugar row ">
+                            <div>
+                                <p> Suger up your Inbox </p>
+                            </div>
+
+                            <div class="col-8">
+                                <div class="form-outline form-white mb-4">
+                                    <input type="email" id="form5Example29" class="form-control"
+                                        placeholder="Email address" />
+
+                                </div>
+                            </div>
+
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-outline-light mb-4">
+                                    SEND
+                                </button>
+                            </div>
+                        </div>
+                    </footer>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="txt container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <p>
+                        <a href="#!" class="text-reset">Shop</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Our story</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Why Miss cupcake</a>
+                    </p>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="txt col-lg-8 col-md-12 mb-4 mb-md-0">
+                    <footer class=" text">
+                        <!-- Grid container -->
+                        <div>
+                            <!-- Section: Form -->
+
+                            <p>
+                                <a href="#!" class="text-reset">Privacy policy</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Cookies policy</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Terms of use</a>
+                            </p>
+
+                            <!-- Section: Form -->
+                        </div>
+                        <!-- Grid container -->
+                    </footer>
+
+
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+
+        <!-- Copyright -->
+        <div class="miss container p-3">
+            &copy; MISS CUPCAKES 2020
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+
+
+
+
+    <script>
+
+        // strawberry
+        function strawberryincrease() {
+            var value = parseInt(document.getElementById('strawberry').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('strawberry').value = value;
+        }
+
+        function strawberrydecrease() {
+            var value = parseInt(document.getElementById('strawberry').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('strawberry').value = value;
+        }
+
+        // marshmallow
+        function marshmallowincrease() {
+            var value = parseInt(document.getElementById('marshmallow').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('marshmallow').value = value;
+        }
+
+        function marshmallowdecrease() {
+            var value = parseInt(document.getElementById('marshmallow').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('marshmallow').value = value;
+        }
+
+        // chocolate
+        function chocolateincrease() {
+            var value = parseInt(document.getElementById('chocolate').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('chocolate').value = value;
+        }
+
+        function chocolatedecrease() {
+            var value = parseInt(document.getElementById('chocolate').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('chocolate').value = value;
+        }
+
+
+
+        // caramel
+        function caramelincrease() {
+            var value = parseInt(document.getElementById('caramel').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('caramel').value = value;
+        }
+
+        function carameldecrease() {
+            var value = parseInt(document.getElementById('caramel').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('caramel').value = value;
+        }
+
+
+
+        // velvet
+        function velvetincrease() {
+            var value = parseInt(document.getElementById('velvet').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('velvet').value = value;
+        }
+
+        function velvetdecrease() {
+            var value = parseInt(document.getElementById('velvet').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('velvet').value = value;
+        }
+
+        // cinnamon
+        function cinnamonincrease() {
+            var value = parseInt(document.getElementById('cinnamon').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('cinnamon').value = value;
+        }
+
+        function cinnamondecrease() {
+            var value = parseInt(document.getElementById('cinnamon').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('cinnamon').value = value;
+        }
+
+        // nuts
+        function nutincrease() {
+            var nutsvalue = parseInt(document.getElementById('nuts').value, 10);
+            nutsvalue = isNaN(nutsvalue) ? 0 : nutsvalue;
+            nutsvalue++;
+            document.getElementById('nuts').value = nutsvalue;
+        }
+
+
+        function nutdecrease() {
+            var value = parseInt(document.getElementById('nuts').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('nuts').value = value;
+        }
+
+        // vanilla
+        function vanillaincrease() {
+            var value = parseInt(document.getElementById('vanilla').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('vanilla').value = value;
+        }
+
+        function vanilladecrease() {
+            var value = parseInt(document.getElementById('vanilla').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            value--;
+            document.getElementById('vanilla').value = value;
+        }
+
+
+    </script>
 
 </body>
 
