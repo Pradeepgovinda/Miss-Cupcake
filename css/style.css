@@ -11,7 +11,7 @@
 }
 
 .navbar{
-  background-color:#f6bdcfba
+  background-color:#f7cfda
 }
 .navbar-brand {
   font-family: "Lato Regular";
@@ -31,11 +31,21 @@ body {
 
 .cupcake {
   
-  background: #f6bdcfba url('../images/1.png')no-repeat;
+  background: #f7cfda url('../images/1.png')no-repeat;
   background-position: bottom;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   background-size: contain;
 }
+
+
+/* @media only screen and (min-device-width: 401px) and (max-device-width: 1024px) and (orientation:landscape) {
+  .cupcake .top-right-img .img { display: block; }
+} */
+
+/* @media screen and (min-device-width: 601px) and (max-device-width: 1300px) {
+  .top { visibility: visible; }
+} */
+
 
 .top-right-img {
   text-align: center;
@@ -47,9 +57,18 @@ body {
 
 
 
+/* @media screen and (max-width: 1300px) {
+  .top{
+    display: none;
+  }
+
+} */
+
+
+
 .sweet {
   
-  background: #f7f7bbc4 url('../images/2.png') no-repeat;
+  background: #fbfaca url('../images/2.png') no-repeat;
   background-position: bottom;
   padding-bottom: 200px;
   background-size: contain;  
@@ -57,7 +76,7 @@ body {
 
 
 .sweeter {
-  background: #d7ffc66b url('../images/3.png') no-repeat;
+  background: #effbe2 url('../images/3.png') no-repeat;
   background-position: bottom;
   padding-bottom: 200px;
   background-size: contain;
@@ -65,16 +84,15 @@ body {
 
 .time {
   
-  background: #ffe7ba9e url('../images/4.png') no-repeat;
+  background: #fcefd2 url('../images/4.png') no-repeat;
   background-size: contain;
-  padding-bottom: 200px;
   background-position: bottom;
 
 }
 
 .footer {
  
-  background-color: #642c99;
+  background-color: #5d3394;
 }
 
 @font-face {
@@ -131,9 +149,10 @@ body {
 }
 
 .touch-txt .p-2 {
-  font-family: 'Lato';
+  font-family: 'Lato Regular';
   text-align: center;
   color: #642C99;
+  font-size: 16px;
 
 }
 
@@ -201,7 +220,7 @@ form #input-wrap {
     border-top: 1px solid #642C99;
     border-bottom: 1px solid #642C99;
     width: 3em;
-    height: 2.85em;
+    height: 3.1em;
     background-color: #edfee8;
 }
 
@@ -235,8 +254,60 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-@media screen and (max-width: 800px) {
-  .foot .a {
+/* @media screen and (max-width: 900px) {
+  .footer .cl {
     display: none;
   }
+} */
+.footer .cl .h-2{
+  font-family: "Wendy One";
+  font-size: 32px;
+}
+
+.footer .cl .para{
+  font-family: "Lato Regular";
+  font-size: 1.2em;
+}
+
+.form-control {
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #5d3394;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+ 
+  
+}
+
+
+
+
+.footer-2 {
+  background-color: #5d3394;
+  color: #FDEFD1;
+}
+
+
+.footer-2 .h-2{
+  font-family: 'Wendy One';
+  font-size: 32px;
+}
+
+.footer-2 .text .sugar{
+  font-family: "Lato Regular";
+}
+
+.footer-2 .txt .text-reset{
+  font-family: "Lato Regular";
+  font-size: 18px;
+
+}
+
+.footer-2 .miss{
+  font-family: 'Lato Regular';
+  font-size: 18px;
+
 }
