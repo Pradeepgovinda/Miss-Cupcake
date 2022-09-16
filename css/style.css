@@ -28,7 +28,6 @@ body {
   font-size: 13px;
 }
 
-
 .cupcake {
   
   background: #f7cfda url('../images/1.png')no-repeat;
@@ -36,15 +35,6 @@ body {
   /* padding-bottom: 100px; */
   background-size: contain;
 }
-
-
-/* @media only screen and (min-device-width: 401px) and (max-device-width: 1024px) and (orientation:landscape) {
-  .cupcake .top-right-img .img { display: block; }
-} */
-
-/* @media screen and (min-device-width: 601px) and (max-device-width: 1300px) {
-  .top { visibility: visible; }
-} */
 
 
 .top-right-img {
@@ -55,19 +45,12 @@ body {
   width: auto;
 }
 
-
-
-/* @media screen and (max-width: 1300px) {
-  .top{
-    display: none;
-  }
-
-} */
-
+.top {
+  width: auto;
+}
 
 
 .sweet {
-  
   background: #fbfaca url('../images/2.png') no-repeat;
   background-position: bottom;
   padding-bottom: 200px;
@@ -82,8 +65,13 @@ body {
   background-size: contain;
 }
 
+.sweeter form{
+    border: 2px solid #642C99;
+    border-radius: 10px;
+    width: max-content;
+}
+
 .time {
-  
   background: #fcefd2 url('../images/4.png') no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -91,7 +79,6 @@ body {
 }
 
 .footer {
- 
   background-color: #5d3394;
 }
 
@@ -127,7 +114,7 @@ body {
 .touch-txt .btn {
   background: var(--primary-color);
   border-radius: 8px;
-  color: #fff;
+  color: #fbfaca;
   padding: 0.5em 2.3em;
 }
 
@@ -179,14 +166,15 @@ body {
 
 .value-button {
   display: inline-block;
-    border: 1px solid #642C99;
-    margin: 0px;
-    width: 40px;
-    /* height: 20px; */
-    text-align: center;
-    /* vertical-align: middle; */
-    padding: 10px;
-    /* background: #642C99; */
+  /* border: 1px solid hsl(271, 55%, 39%); */
+  border-right: none;
+  border-left: none;
+  margin: 0px;
+  /* height: 20px; */
+  text-align: center;
+  /* vertical-align: middle; */
+  padding: 10px;
+  /* background: #642C99; */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -214,14 +202,14 @@ form #input-wrap {
   padding: 0px;
 }
 
-.operation{
+.operation {
   text-align: center;
-    border: none;
-    border-top: 1px solid #642C99;
-    border-bottom: 1px solid #642C99;
-    width: 3em;
-    height: 3.1em;
-    background-color: #edfee8;
+  border: none;
+  /* border-top: 1px solid #642C99; */
+  /* border-bottom: 1px solid #642C99; */
+  width: 3em;
+  height: 3.1em;
+  background-color: rgb(239 251 226);
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -253,12 +241,6 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0 2em;
 }
 
-
-/* @media screen and (max-width: 900px) {
-  .footer .cl {
-    display: none;
-  }
-} */
 .footer .cl .h-2{
   font-family: "Wendy One";
   font-size: 32px;
@@ -269,6 +251,13 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 1.2em;
 }
 
+.footer .btn{
+  background:#fcefd2;
+  background-color: #fcefd2;
+  color: #5d3394;
+}
+
+
 .form-control {
   width: 100%;
   padding: .375rem .75rem;
@@ -277,9 +266,8 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 1.5;
   background-color: #5d3394;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
- 
-  
+  border: 1px solid #fcefd2;
+  color: #edfee8;
 }
 
 
@@ -311,3 +299,11 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 18px;
 
 }
+
+.footer-2 .btn{
+  background:#fcefd2;
+  background-color: #fcefd2;
+  color: #5d3394;
+}
+
+
