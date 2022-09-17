@@ -22,6 +22,17 @@
   color: #642C99;
 }
 
+
+#content .shoping {
+  width: 3%;
+}
+#content img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
 body {
   padding: 0;
   margin: 0;
@@ -71,6 +82,18 @@ body {
     width: max-content;
 }
 
+.sweeter .button {
+  width: max-content;
+}
+
+.sweeter .marsh {
+  text-align: -webkit-center;
+}
+
+.sweeter .mb-5{
+    text-align: -webkit-center;
+}
+
 .time {
   background: #fcefd2 url('../images/4.png') no-repeat;
   background-size: contain;
@@ -115,7 +138,8 @@ body {
   background: var(--primary-color);
   border-radius: 8px;
   color: #fbfaca;
-  padding: 0.5em 2.3em;
+  padding: 0.5em 1.9em;
+  width: max-content;
 }
 
 .touch-txt .h-3 {
