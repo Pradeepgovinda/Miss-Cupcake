@@ -28,10 +28,21 @@
 }
 #content img {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
 }
 
+
+span.circle {
+  height: 1.5em;
+  width: 1.5em;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #fbfaca;
+  position: relative;
+}
 
 body {
   padding: 0;
@@ -190,21 +201,21 @@ body {
 
 .value-button {
   display: inline-block;
-  /* border: 1px solid hsl(271, 55%, 39%); */
-  border-right: none;
-  border-left: none;
-  margin: 0px;
-  /* height: 20px; */
-  text-align: center;
-  /* vertical-align: middle; */
   padding: 10px;
+  /* border: 1px solid hsl(271, 55%, 39%); */
+  /* border-right: none;
+  border-left: none;
+  margin: 0px; */
+  /* height: 20px; */
+  /* text-align: center; */
+  /* vertical-align: middle; */
   /* background: #642C99; */
-  -webkit-touch-callout: none;
+  /* -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  user-select: none; */
 }
 
 .value-button:hover {
@@ -213,12 +224,12 @@ body {
 
 form #decrease {
   margin-right: -4px;
-  border-radius: 8px 0 0 8px;
+  /* border-radius: 8px 0 0 8px; */
 }
 
 form #increase {
   margin-left: -4px;
-  border-radius: 0 8px 8px 0;
+  /* border-radius: 0 8px 8px 0; */
 }
 
 form #input-wrap {
@@ -232,7 +243,7 @@ form #input-wrap {
   /* border-top: 1px solid #642C99; */
   /* border-bottom: 1px solid #642C99; */
   width: 3em;
-  height: 3.1em;
+  /* height: 3.1em; */
   background-color: rgb(239 251 226);
 }
 
